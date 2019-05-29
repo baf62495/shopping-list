@@ -6,7 +6,7 @@ $(function() {
 		event.preventDefault();
 
 		// set variable to whatever input was submitted
-		const newItem = $(this).find('input[name="shopping-list-entry"]').val();
+		const newItem = $(this).find('#shopping-list-entry').val();
 
 		// add item to list with item name based on newItem
 		$('ul').append(
@@ -23,7 +23,7 @@ $(function() {
 		      </li>`);
 
 		// clear input after submission
-
+		$(this).find('#shopping-list-entry').val("");
 
 	});
 
