@@ -27,11 +27,6 @@ $(function addNewItemToList() {
 
 	});
 
-});
-
-
-
-$(function checkAndUncheckItem() {
 
 	// when a toggle button is clicked inside a ul start this event
 	$('ul').on('click', '.shopping-item-toggle', function(event) {
@@ -43,11 +38,6 @@ $(function checkAndUncheckItem() {
 
 	});
 
-});
-
-
-
-$(function removeItemFromList() {
 
 	// when delete button is clicked inside a ul start this event
 	$('ul').on('click', '.shopping-item-delete', function(event) {
