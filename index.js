@@ -1,4 +1,4 @@
-$(function() {
+$(function addNewItemToList() {
 
 	$('#js-shopping-list-form').submit(event => {
 		
@@ -24,6 +24,18 @@ $(function() {
 
 		// clear input after submission
 		$(this).find('#shopping-list-entry').val("");
+
+	});
+
+});
+
+
+$(function checkAndUncheckItem() {
+
+	$('ul').on('click', '.shopping-item-toggle', function(event) {
+
+		// add item checked class to element
+		$(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
 
 	});
 
