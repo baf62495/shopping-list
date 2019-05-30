@@ -1,4 +1,4 @@
-$(function addNewItemToList() {
+$(function() {
 
 	$('#js-shopping-list-form').submit(event => {
 		
